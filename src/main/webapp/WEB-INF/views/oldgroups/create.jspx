@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_canoepro2_domain_Oldgroup" modelAttribute="oldgroup" path="/oldgroups" render="${empty dependencies}" z="vOKaVSF/DJNqQ9A0xiNMq3l/2fQ=">
+        <field:simple field="races" id="c_com_canoepro2_domain_Oldgroup_races" messageCode="entity_reference_not_managed" messageCodeAttribute="Race" z="jYr4go9aiiiTMTLRGURHb0+TWWI="/>
+        <field:input field="oldmin" id="c_com_canoepro2_domain_Oldgroup_oldmin" required="true" validationMessageCode="field_invalid_integer" z="PbBtBiwPtNO5QKPeBl8FDDy1mRE="/>
+        <field:input field="oldmax" id="c_com_canoepro2_domain_Oldgroup_oldmax" required="true" validationMessageCode="field_invalid_integer" z="r92H9Ydrzu6uxSvVT1kRG3gveQY="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_canoepro2_domain_Oldgroup" render="${not empty dependencies}" z="s7aEC0yhKdZ05KUAg+9+/q74AxQ="/>
+</div>

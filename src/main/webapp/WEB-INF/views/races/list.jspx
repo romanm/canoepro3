@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_canoepro2_domain_Race" items="${races}" z="+/kMS0KlNTUSHxDvERW3WusUgk0=">
+        <table:table data="${races}" id="l_com_canoepro2_domain_Race" path="/races" z="6dsX5urKTymkR/4mjvQrfDNClPM=">
+            <table:column id="c_com_canoepro2_domain_Race_idboot" property="idboot" z="0avDOQVFL6EQXJVEUxwRpxsS0oA="/>
+            <table:column id="c_com_canoepro2_domain_Race_idcompetition" property="idcompetition" z="kODxEU24lXmbiGUhyO2AeZuTvGc="/>
+            <table:column id="c_com_canoepro2_domain_Race_iddistance" property="iddistance" z="dFbP8O8VSUn52huIQK/T8/cOcrs="/>
+            <table:column id="c_com_canoepro2_domain_Race_idgender" property="idgender" z="f4O753Z4O8bNtQz/e+2+2Rkg+s8="/>
+            <table:column id="c_com_canoepro2_domain_Race_idoldgroup" property="idoldgroup" z="Sniwun2tg2J3nDC4xAsuNuQfyxo="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_distance" z="rMWjjAeAfSxEPouMs9fxm79uTyg=">
+            <menu:item id="i_distance_new" messageCode="global_menu_new" url="/distances?form" z="8f5fMukKFv2HYCggqpepAHC/deM="/>
+            <menu:item id="i_distance_list" messageCode="global_menu_list" url="/distances?page=1&amp;size=${empty param.size ? 10 : param.size}" z="6a8xiJEHtIf+3znWB3umtO6YXdw="/>
+        </menu:category>
+        <menu:category id="c_oldgroup" z="A6x4U3jkNmfFiBU6KMcfVvQRuH0=">
+            <menu:item id="i_oldgroup_new" messageCode="global_menu_new" url="/oldgroups?form" z="RRv1pTztF1yoKtlGkhHNiia8xSk="/>
+            <menu:item id="i_oldgroup_list" messageCode="global_menu_list" url="/oldgroups?page=1&amp;size=${empty param.size ? 10 : param.size}" z="KMm9P6gUh4jEmUpVjsrFJcuzKvI="/>
+        </menu:category>
+        <menu:category id="c_competition" z="3o4yHluQ9XIhyw6c4vcZI1oWpss=">
+            <menu:item id="i_competition_new" messageCode="global_menu_new" url="/competitions?form" z="ra45JUnDZvDLqqs+g5BL0NlEK6k="/>
+            <menu:item id="i_competition_list" messageCode="global_menu_list" url="/competitions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="+6VEWqszkUUVkknGJ3mQLq+rR1I="/>
+        </menu:category>
+        <menu:category id="c_band" z="AQtGIFFAfHYtB3sbUGtQkNHYCSE=">
+            <menu:item id="i_band_new" messageCode="global_menu_new" url="/bands?form" z="IQePhXteNP7QMSX9GsMXlnPbq+k="/>
+            <menu:item id="i_band_list" messageCode="global_menu_list" url="/bands?page=1&amp;size=${empty param.size ? 10 : param.size}" z="2hMT1vNy6HEgQvK+34jteQSWzXo="/>
+        </menu:category>
+        <menu:category id="c_racetype" z="xIoa0twJk1EpUIRW91kc+qJyjvc=">
+            <menu:item id="i_racetype_new" messageCode="global_menu_new" url="/racetypes?form" z="bHFwpZKWqiU9wiN23GUdNy5hDu8="/>
+            <menu:item id="i_racetype_list" messageCode="global_menu_list" url="/racetypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="rU2sT7YRXUJDh1MQTddodivFhTM="/>
+        </menu:category>
+        <menu:category id="c_bandathlete" z="VbscIG7WlrfM2ZYC+0remdOoUig=">
+            <menu:item id="i_bandathlete_new" messageCode="global_menu_new" url="/bandathletes?form" z="jSrObnVbqiURhZEYobRaKb6qeuA="/>
+            <menu:item id="i_bandathlete_list" messageCode="global_menu_list" url="/bandathletes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="eJYS7tAjTFmwLc5VjRP89tryhAw="/>
+        </menu:category>
+        <menu:category id="c_gender" z="rs6Edo9pdk6gqZx5Augnd7P/lu0=">
+            <menu:item id="i_gender_new" messageCode="global_menu_new" url="/genders?form" z="FOZA/tkKuZU8kcWIe8OiMaP5CiA="/>
+            <menu:item id="i_gender_list" messageCode="global_menu_list" url="/genders?page=1&amp;size=${empty param.size ? 10 : param.size}" z="OlI2PsbrQB3JpnCZPVE5DRB+iN4="/>
+        </menu:category>
+        <menu:category id="c_athlete" z="gasY/VTloudZG+bImzvQYEQijoQ=">
+            <menu:item id="i_athlete_new" messageCode="global_menu_new" url="/athletes?form" z="84ZH+GQEN5L/jFKvSkDlu/BlKJk="/>
+            <menu:item id="i_athlete_list" messageCode="global_menu_list" url="/athletes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="KNwI69qxaz9Pv+8Rvt3oPvONZjM="/>
+        </menu:category>
+        <menu:category id="c_race" z="r4JqxNLcjSNy12JQsZaYJAxxE+M=">
+            <menu:item id="i_race_new" messageCode="global_menu_new" url="/races?form" z="BNbRyyHCMLaFjKBjCe4sxdGvvMo="/>
+            <menu:item id="i_race_list" messageCode="global_menu_list" url="/races?page=1&amp;size=${empty param.size ? 10 : param.size}" z="sE4UyOFddub7WGQ4ktzpXvIoTu4="/>
+        </menu:category>
+        <menu:category id="c_boot" z="q5o3ZrfnMNLL1PXyCTkaReebWeM=">
+            <menu:item id="i_boot_new" messageCode="global_menu_new" url="/boots?form" z="7iQDSlroo12aNKNMNn5SPZE4xYk="/>
+            <menu:item id="i_boot_list" messageCode="global_menu_list" url="/boots?page=1&amp;size=${empty param.size ? 10 : param.size}" z="OKUP9A1NYstyTdNOA5oUdRZweho="/>
+        </menu:category>
+        <menu:category id="c_flows" z="5igpkb/e+HPIN8iUErvmM38Eqqk=">
+            <menu:item id="i_flows_sampleflow" messageCode="webflow_menu_enter" url="/sampleflow" z="JMM+dAVQySYHXliwJ5d5AQocPfk="/>
+        </menu:category>
+    </menu:menu>
+</div>

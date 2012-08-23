@@ -1,0 +1,18 @@
+project --topLevelPackage com.canoepro2 --projectName canoepro2 --java 6
+
+#module create --moduleName cc2006core --topLevelPackage org.tasclin1.clincon2006
+jpa setup --provider ECLIPSELINK --database POSTGRES 
+database properties set --key database.username --value ows_edit
+database properties set --key database.password --value ows123
+database properties set --key database.url --value jdbc:postgresql://localhost:5432/canoe
+addon install id --searchResultId 01
+database reverse engineer --schema public --package ~.domain --enableViews true
+
+#module focus --moduleName ~
+#module create --moduleName cc2006mvc --topLevelPackage org.tasclin1.clincon2006 --packaging WAR
+web mvc setup
+web mvc all --package ~.web
+web flow 
+web mvc language --code de
+web mvc language --code it
+web mvc language --code es

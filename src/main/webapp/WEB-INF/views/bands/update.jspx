@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_canoepro2_domain_Band" modelAttribute="band" path="/bands" versionField="none" z="J2n3dM4iDu6PrPizDny+cxnxF0E=">
+        <field:simple field="bandAthletes" id="c_com_canoepro2_domain_Band_bandAthletes" messageCode="entity_reference_not_managed" messageCodeAttribute="Band Athlete" z="YNdNbpTWHmF37vc+GDnLeiduyGk="/>
+        <field:select field="idrace" id="c_com_canoepro2_domain_Band_idrace" itemValue="id" items="${races}" path="/races" z="kpHyRn64K5WN5RkEt1Tki4eSXYA="/>
+        <field:input field="band" id="c_com_canoepro2_domain_Band_band" required="true" validationMessageCode="field_invalid_integer" z="FdPGFoL3GOsuCJ+roymQI0LW3Ms="/>
+        <field:input field="rank" id="c_com_canoepro2_domain_Band_rank" validationMessageCode="field_invalid_integer" z="k6qgaubttatO6UXbFhd5OlGiiHw="/>
+        <field:datetime dateTimePattern="${band_finish_date_format}" field="finish" id="c_com_canoepro2_domain_Band_finish" z="E6yYZXNjmCLzaNVkEEgjtx2UbwM="/>
+    </form:update>
+</div>

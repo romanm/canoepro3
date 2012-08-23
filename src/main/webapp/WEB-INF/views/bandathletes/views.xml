@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="bandathletes/list">
+        <put-attribute name="body" value="/WEB-INF/views/bandathletes/list.jspx"/>
+    </definition>
+<definition extends="default" name="bandathletes/show">
+        <put-attribute name="body" value="/WEB-INF/views/bandathletes/show.jspx"/>
+    </definition>
+<definition extends="default" name="bandathletes/create">
+        <put-attribute name="body" value="/WEB-INF/views/bandathletes/create.jspx"/>
+    </definition>
+<definition extends="default" name="bandathletes/update">
+        <put-attribute name="body" value="/WEB-INF/views/bandathletes/update.jspx"/>
+    </definition>
+</tiles-definitions>

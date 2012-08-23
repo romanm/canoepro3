@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_canoepro2_domain_Oldgroup" object="${oldgroup}" path="/oldgroups" z="KUH1oFmREzmzZHqReP25wKJg36o=">
+        <field:display field="oldmin" id="s_com_canoepro2_domain_Oldgroup_oldmin" object="${oldgroup}" z="424jvcTKO+4G1yIXXpwyIQTTgnI="/>
+        <field:display field="oldmax" id="s_com_canoepro2_domain_Oldgroup_oldmax" object="${oldgroup}" z="IUQxCFuTWXioFCFux1wqcpXFxZw="/>
+    </page:show>
+</div>

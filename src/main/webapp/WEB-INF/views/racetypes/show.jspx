@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_canoepro2_domain_Racetype" object="${racetype}" path="/racetypes" z="LQjhshSrFM8UiarUNxp1SiH9hfM=">
+        <field:display field="racetype" id="s_com_canoepro2_domain_Racetype_racetype" object="${racetype}" z="XdjYZhYJypHKB2C1KCQz7X4vhr8="/>
+    </page:show>
+</div>

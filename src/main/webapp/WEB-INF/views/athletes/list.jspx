@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_canoepro2_domain_Athlete" items="${athletes}" z="PKt44mzUCPyXas8FtJLZPEWGjs0=">
+        <table:table data="${athletes}" id="l_com_canoepro2_domain_Athlete" path="/athletes" z="W1EM9Zfl3bSoOehDc15JS9/OZM4=">
+            <table:column id="c_com_canoepro2_domain_Athlete_forename" property="forename" z="oY0xIh0zmJ3ur5QRZMjHlbfX2wA="/>
+            <table:column id="c_com_canoepro2_domain_Athlete_familyname" property="familyname" z="Poz4Od20nwklQ0ZQIjGgUdfS+Uo="/>
+            <table:column id="c_com_canoepro2_domain_Athlete_sex" property="sex" z="5PR2PHh2ZfeuO5sgSPhZrJ82DVY="/>
+            <table:column date="true" dateTimePattern="${athlete_birthdate_date_format}" id="c_com_canoepro2_domain_Athlete_birthdate" property="birthdate" z="SLmN8Fe9S72DVQWAowLPt9/CNFU="/>
+        </table:table>
+    </page:list>
+</div>

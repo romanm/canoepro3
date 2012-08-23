@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_canoepro2_domain_BandAthlete" modelAttribute="bandAthlete" path="/bandathletes" versionField="none" z="ArJ0IGMLV93qXzF0dGAT7XqLU/E=">
+        <field:select field="idathlete" id="c_com_canoepro2_domain_BandAthlete_idathlete" itemValue="id" items="${athletes}" path="/athletes" z="aX8QTvlRwVYe1VxZqsSAD4PlxFs="/>
+        <field:select field="idband" id="c_com_canoepro2_domain_BandAthlete_idband" itemValue="id" items="${bands}" path="/bands" z="sqm53FTDmKN91p3OJLcCzR0XEvA="/>
+        <field:input field="sit" id="c_com_canoepro2_domain_BandAthlete_sit" validationMessageCode="field_invalid_integer" z="uOHYJIyjKQwZqAtEIS9IrBN6aYk="/>
+    </form:update>
+</div>

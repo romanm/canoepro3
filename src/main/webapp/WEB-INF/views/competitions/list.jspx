@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_canoepro2_domain_Competition" items="${competitions}" z="D/wYQRQT0hfe3COF/69wMCxf48s=">
+        <table:table data="${competitions}" id="l_com_canoepro2_domain_Competition" path="/competitions" z="wb76pNU102HVdPDxaPXzhefGl5A=">
+            <table:column id="c_com_canoepro2_domain_Competition_competition" property="competition" z="QuMKbyQRLsDHDG0SxYQPhLF5qw4="/>
+            <table:column date="true" dateTimePattern="${competition_begindate_date_format}" id="c_com_canoepro2_domain_Competition_begindate" property="begindate" z="SFLKzzgSA2KDoUDlwGR5tg3yKTw="/>
+            <table:column date="true" dateTimePattern="${competition_enddate_date_format}" id="c_com_canoepro2_domain_Competition_enddate" property="enddate" z="BuLDqYaUOEu7D0cCjfIwhkTLyQs="/>
+        </table:table>
+    </page:list>
+</div>

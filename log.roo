@@ -1,0 +1,20 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-23 14:35:27
+project --topLevelPackage com.canoepro2 --projectName canoepro2 --java 6
+jpa setup --provider ECLIPSELINK --database POSTGRES 
+database properties set --key database.username --value ows_edit
+database properties set --key database.password --value ows123
+database properties set --key database.url --value jdbc:postgresql://localhost:5432/canoe
+addon install id --searchResultId 01
+database reverse engineer --schema public --package ~.domain --enableViews true
+web mvc setup
+web mvc all --package ~.web
+web flow 
+web mvc language --code de
+web mvc language --code it
+web mvc language --code es
+// script --file myRoo2.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-23 14:35:47
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-23 14:38:56
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-23 15:16:04
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-23 15:27:24

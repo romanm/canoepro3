@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_canoepro2_domain_Band" object="${band}" path="/bands" z="xVnLDY0R3pVXt8Wd6PHsjcmywkI=">
+        <field:display field="idrace" id="s_com_canoepro2_domain_Band_idrace" object="${band}" z="JX/zSSLD/JX8XlPMS3cKlLRfJ/U="/>
+        <field:display field="band" id="s_com_canoepro2_domain_Band_band" object="${band}" z="oZnIhpmaLmGEm9HEhlGj8+BSPdw="/>
+        <field:display field="rank" id="s_com_canoepro2_domain_Band_rank" object="${band}" z="9i4mvEWW5NURGbO2ynJPrKM/7/k="/>
+        <field:display date="true" dateTimePattern="${band_finish_date_format}" field="finish" id="s_com_canoepro2_domain_Band_finish" object="${band}" z="RqtdwEkp7n1rnO3yIjXBQA3w39Y="/>
+    </page:show>
+</div>

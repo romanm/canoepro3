@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_canoepro2_domain_Boot" items="${boots}" z="xw4atyWzEbU5bNKYMJ7uAI8iplY=">
+        <table:table data="${boots}" id="l_com_canoepro2_domain_Boot" path="/boots" z="uCs6O2ToJyCMpEg3nqAAWDQK8tA=">
+            <table:column id="c_com_canoepro2_domain_Boot_boot" property="boot" z="d6RGf13tWUPX6EkpDdTVrtFxYec="/>
+        </table:table>
+    </page:list>
+</div>

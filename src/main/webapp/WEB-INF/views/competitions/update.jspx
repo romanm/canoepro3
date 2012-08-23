@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_canoepro2_domain_Competition" modelAttribute="competition" path="/competitions" versionField="none" z="d38KBdOpXYQ6WGw55ahbGWDD2EM=">
+        <field:simple field="races" id="c_com_canoepro2_domain_Competition_races" messageCode="entity_reference_not_managed" messageCodeAttribute="Race" z="BKZWrxqjjj4ckRtIF0iziSdF2tY="/>
+        <field:input field="competition" id="c_com_canoepro2_domain_Competition_competition" required="true" z="s1RcO4u8Gi6VecyoNZfWRJQFJlQ="/>
+        <field:datetime dateTimePattern="${competition_begindate_date_format}" field="begindate" id="c_com_canoepro2_domain_Competition_begindate" required="true" z="jwQsWs33hRTAZtFqd4pThOrV5r8="/>
+        <field:datetime dateTimePattern="${competition_enddate_date_format}" field="enddate" id="c_com_canoepro2_domain_Competition_enddate" required="true" z="mQXYS9mmm5BiO94YXLEbrnetI5o="/>
+    </form:update>
+</div>

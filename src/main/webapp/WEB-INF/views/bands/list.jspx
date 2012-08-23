@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_canoepro2_domain_Band" items="${bands}" z="nLuznBB+AbtaIAp0+f3hMiDRnt0=">
+        <table:table data="${bands}" id="l_com_canoepro2_domain_Band" path="/bands" z="i1yVs+keOPy9V9SsL0uEDboJC3M=">
+            <table:column id="c_com_canoepro2_domain_Band_idrace" property="idrace" z="zPyokfVhh6AWjTIbLmttc1vSmPs="/>
+            <table:column id="c_com_canoepro2_domain_Band_band" property="band" z="xF/1Y2hensg2WH/5sh7IiqjMUzQ="/>
+            <table:column id="c_com_canoepro2_domain_Band_rank" property="rank" z="P+hbxpj19kpHEDX/fmPNwwgP1Iw="/>
+            <table:column date="true" dateTimePattern="${band_finish_date_format}" id="c_com_canoepro2_domain_Band_finish" property="finish" z="nVAZDNCj2tb4oO+7C20JT7YQspc="/>
+        </table:table>
+    </page:list>
+</div>

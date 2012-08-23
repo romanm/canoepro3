@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_canoepro2_domain_Race" object="${race}" path="/races" z="ZJxVo5nea/tjmsAZ/gX+m/CDOpQ=">
+        <field:display field="idboot" id="s_com_canoepro2_domain_Race_idboot" object="${race}" z="8wmufNDH9q2amH0ejdshlHGySj0="/>
+        <field:display field="idcompetition" id="s_com_canoepro2_domain_Race_idcompetition" object="${race}" z="x2KEy18j00zIzVW5FrScgowQR8U="/>
+        <field:display field="iddistance" id="s_com_canoepro2_domain_Race_iddistance" object="${race}" z="fDDeziLixjA+HCpXY01uahOWvUs="/>
+        <field:display field="idgender" id="s_com_canoepro2_domain_Race_idgender" object="${race}" z="ybpEfAeAwqmOx87dmBWPpFmPwvk="/>
+        <field:display field="idoldgroup" id="s_com_canoepro2_domain_Race_idoldgroup" object="${race}" z="C/K+P72R19NNgTgGsfiQuzbgLMw="/>
+        <field:display field="idracetype" id="s_com_canoepro2_domain_Race_idracetype" object="${race}" z="DqATeAOmVC2IKsvG/9GnVqI8QCE="/>
+        <field:display date="true" dateTimePattern="${race_start_date_format}" field="start" id="s_com_canoepro2_domain_Race_start" object="${race}" z="8UfN1t5hhgMneHoGZgqbCj6xXZg="/>
+    </page:show>
+</div>
