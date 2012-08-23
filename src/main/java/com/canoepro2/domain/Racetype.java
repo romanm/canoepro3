@@ -2,6 +2,7 @@ package com.canoepro2.domain;
 
 import java.util.List;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
@@ -12,27 +13,24 @@ import javax.persistence.OneToMany;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.roo.addon.dbre.RooDbManaged;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
-import org.springframework.roo.addon.tostring.RooToString;
 import org.springframework.transaction.annotation.Transactional;
 
 @Entity
 @Table(schema = "public", name = "racetype")
 @Configurable
-@RooJavaBean
-@RooToString
-@RooJpaActiveRecord(versionField = "", table = "racetype", schema = "public")
-@RooDbManaged(automaticallyDelete = true)
 public class Racetype {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Column(name = "id")
+
+	@Id
+	@javax.persistence.SequenceGenerator(name="RACETYPE_ID_GENERATOR", sequenceName="DBID")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="RACETYPE_ID_GENERATOR")
     private Integer id;
 
     @PersistenceContext

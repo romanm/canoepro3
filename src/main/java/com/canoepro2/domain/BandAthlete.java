@@ -1,6 +1,7 @@
 package com.canoepro2.domain;
 
 import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
@@ -10,23 +11,17 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.PersistenceContext;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.roo.addon.dbre.RooDbManaged;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
-import org.springframework.roo.addon.tostring.RooToString;
 import org.springframework.transaction.annotation.Transactional;
 
 @Entity
 @Table(schema = "public", name = "band_athlete")
 @Configurable
-@RooJavaBean
-@RooToString
-@RooJpaActiveRecord(versionField = "", table = "band_athlete", schema = "public")
-@RooDbManaged(automaticallyDelete = true)
 public class BandAthlete {
 
     @ManyToOne
@@ -40,9 +35,13 @@ public class BandAthlete {
     @Column(name = "sit")
     private Short sit;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Column(name = "id")
+
+	@Id
+	@SequenceGenerator(name="BAND_ATHLETE_ID_GENERATOR", sequenceName="DBID")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BAND_ATHLETE_ID_GENERATOR")
     private Integer id;
 
     @PersistenceContext

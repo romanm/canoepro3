@@ -1,14 +1,12 @@
 package com.canoepro2.web;
 
-import com.canoepro2.domain.Band;
-import com.canoepro2.domain.BandAthlete;
-import com.canoepro2.domain.Race;
 import java.io.UnsupportedEncodingException;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+
 import org.joda.time.format.DateTimeFormat;
 import org.springframework.context.i18n.LocaleContextHolder;
-import org.springframework.roo.addon.web.mvc.controller.scaffold.RooWebScaffold;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -19,9 +17,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
+import com.canoepro2.domain.Band;
+import com.canoepro2.domain.BandAthlete;
+import com.canoepro2.domain.Race;
+
 @RequestMapping("/bands")
 @Controller
-@RooWebScaffold(path = "bands", formBackingObject = Band.class)
 public class BandController {
 
 	@RequestMapping(method = RequestMethod.POST, produces = "text/html")

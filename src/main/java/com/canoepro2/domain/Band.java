@@ -1,8 +1,10 @@
 package com.canoepro2.domain;
 
+
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
@@ -13,27 +15,21 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.PersistenceContext;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
+
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.roo.addon.dbre.RooDbManaged;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
-import org.springframework.roo.addon.tostring.RooToString;
 import org.springframework.transaction.annotation.Transactional;
 
 @Configurable
 @Entity
 @Table(schema = "public", name = "band")
-@RooJavaBean
-@RooToString
-@RooJpaActiveRecord(versionField = "", table = "band", schema = "public")
-@RooDbManaged(automaticallyDelete = true)
 public class Band {
 
     @PersistenceContext
@@ -58,9 +54,12 @@ public class Band {
     @DateTimeFormat(style = "M-")
     private Date finish;
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Column(name = "id")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+	@SequenceGenerator(name="BAND_ID_GENERATOR", sequenceName="DBID")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BAND_ID_GENERATOR")
     private Integer id;
 
     public String toString() {

@@ -1,7 +1,9 @@
 package com.canoepro2.domain;
 
+
 import java.util.List;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
@@ -10,24 +12,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.PersistenceContext;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.roo.addon.dbre.RooDbManaged;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
-import org.springframework.roo.addon.tostring.RooToString;
 import org.springframework.transaction.annotation.Transactional;
 
 @Entity
 @Table(schema = "public", name = "boot")
 @Configurable
-@RooJavaBean
-@RooToString
-@RooJpaActiveRecord(versionField = "", table = "boot", schema = "public")
-@RooDbManaged(automaticallyDelete = true)
 public class Boot {
 
     @OneToMany(mappedBy = "idboot")
@@ -37,9 +33,13 @@ public class Boot {
     @NotNull
     private String boot;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Column(name = "id")
+
+	@Id
+	@SequenceGenerator(name="BOOT_ID_GENERATOR", sequenceName="DBID")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BOOT_ID_GENERATOR")
     private Integer id;
 
     @PersistenceContext

@@ -2,6 +2,7 @@ package com.canoepro2.domain;
 
 import java.util.List;
 import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
@@ -10,29 +11,27 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.PersistenceContext;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.roo.addon.dbre.RooDbManaged;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
-import org.springframework.roo.addon.tostring.RooToString;
 import org.springframework.transaction.annotation.Transactional;
 
 @Entity
 @Table(schema = "public", name = "oldgroup")
 @Configurable
-@RooJavaBean
-@RooToString
-@RooJpaActiveRecord(versionField = "", table = "oldgroup", schema = "public")
-@RooDbManaged(automaticallyDelete = true)
 public class Oldgroup {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Column(name = "id")
+
+	@Id
+	@SequenceGenerator(name="OLDGROUP_ID_GENERATOR", sequenceName="DBID")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="OLDGROUP_ID_GENERATOR")
     private Integer id;
 
     @PersistenceContext
